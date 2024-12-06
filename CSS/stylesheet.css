@@ -1,22 +1,70 @@
 @import url(https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap);
 
+
+
 body {
 
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
     grid-template-areas: 
-    'tt' 
+    'hd' 
+    'ut'
     'sc1' 
     'sc2' 
     'ft' ;
 }
 
+header {
+    grid-area: 'hd';
+}
+
 h1 {
-    font-family: 'Commissioner', sans-serif; 
-    font-size: 3rem;                       
-    font-weight: 400;                      
-    color: #2c3e50;                       
-    text-align: center;                  
-    margin: 20px 0;                       
-    letter-spacing: 2px;                              
+    display: grid;
+    grid-area: tt;
+
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 5px;    
+   
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4%;
+  }
+
+  .library{
+    max-width: 100%;
+    grid-area: hd;
+  }
+
+  .popular{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ut ;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 2px; 
+    margin: 2%;
+    
+  }
+
+  .karin{
+    width: 500px;
+  }
+
   
