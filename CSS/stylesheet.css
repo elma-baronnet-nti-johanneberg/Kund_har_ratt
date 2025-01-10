@@ -38,7 +38,8 @@
     column-gap: 4%;
     grid-template-areas: 
     'hd'
-    'subtitle '
+    'subtitle1 '
+    'subtitle2'
     'sc1'
     'sc2'
     'sc3'
@@ -274,7 +275,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: subtitle ;
+  grid-area: subtitle1 ;
   font-family: "Commissioner", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -283,16 +284,39 @@ h1 {
   margin: 3%;
 }
 
-.book{
-  grid-area: sc1;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    max-width: 100vw;
-    margin: 3%;
-    flex-wrap: wrap;
+.book {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 1%; 
 }
-.book img{
-  width: 30vw;
+
+.book img {
+  width: auto;
+  height: auto;
+  max-width: 35vw; 
   border-radius: 2px;
+}
+
+
+.classic-books {
+  grid-area: sc2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%; 
+  flex-wrap: wrap;
+  margin: 5%; 
+}
+.Click{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: subtitle2 ;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  letter-spacing: 2px; 
+  
 }
